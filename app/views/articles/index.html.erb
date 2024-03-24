@@ -5,12 +5,13 @@
 
       <ul>
         <% @articles.each do |article| %>
+
           <li>
+            <a href="/articles/<%= article.id %>">
             <%= article.title %>
           </li>
         <% end %>
       </ul>
-
     </div>
   </div>
 </div>
